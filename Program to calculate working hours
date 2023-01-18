@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+int age, k;
+clrscr();
+printf("enter the age");
+scanf("%d",&age);
+printf("working hours",&k);
+if(age<=15)
+{
+k=0;
+printf("%d",k);
+}
+else if(age>=16&&age<=20)
+{
+k=3;
+printf("%d",k);
+}
+else if(age>=21&&age<=25)
+{
+k=6;
+printf("%d",k);
+}
+else
+{
+k=8;
+printf("%d",k);
+}
+getch();
+}
