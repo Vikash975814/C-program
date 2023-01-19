@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+struct student
+{
+int roll;
+char name[30];
+int m1,m2,m3,m4,m5;
+};
+struct student std[5];
+int i,sum,per;
+clrscr();
+printf("enter 5 student record");
+printf("\n");
+for(i=0;i<5;i++)
+{
+printf("Enter student data");
+scanf("%d%s%d%d%d%d%d",&std[i].roll,&std[i].name,&std[i].m1,&std[i].m2,
+&std[i].m3,&std[i].m4,&std[i].m5);
+}
+for(i=0;i<5;i++)
+{
+sum=std[i].m1+std[i].m2+std[i].m3+std[i].m4+std[i].m5;
+per=sum/5;
+if(per>=80)
+{
+printf(" Pass student name is: %s\n",std[i].name);
+printf(" Percentage is: %d \n",per);
+}
+else
+{
+printf(" Fail sudent name is: %s\n",std[i].name);
+printf("Percentage is: %d \n",per);
+}
+}
+getch();
+}
