@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main()
+{
+    int r;
+    float area,cir;
+    printf("enter the radies");
+    scanf("%d",&r);
+    area=3.14*r*r;
+    cir=2*3.14*r;
+    printf("area and circumference is %f %f",area,cir);
+    getch();
+    return 0;
+}
