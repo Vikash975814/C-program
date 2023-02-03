@@ -1,0 +1,15 @@
+include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main()
+{
+    float p,r,t,si,ci;
+    printf("enter the principal,rate and interest");
+    scanf("%f%f%f",&p,&r,&t);
+    si=(p*r*t)/100;
+    ci=p*(pow(1+r/100,t)-1);
+    printf("simple interst is %f",si);
+    printf("compound interst is %f",ci);
+    getch();
+    return 0;
+}
