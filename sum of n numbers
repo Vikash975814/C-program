@@ -1,0 +1,16 @@
+              #include<stdio.h>
+             #include<conio.h>
+           void main()
+           {
+           int N,i,sum=0;
+              printf("Enter the Number");
+              scanf("%d",&N);
+              for(i=0;i<=N;i++)
+               {
+              printf("%d\n",i);
+                 sum=sum+i;
+       }
+                printf("sum is all given numbers:%d",sum);
+           getch();
+   }
+
