@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int A[100],i,n,sum=0;
+    printf("How many element do you want to Array");
+    scanf("%d",&n);
+    printf("Enter the element");
+    for(i=0;i<n;i++)  {
+        scanf("%d",&A[i]);
+    }
+    printf("Your element");
+    printf("\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\n",A[i]);
+    }
+    printf("Sum of Given element");
+    printf("\n");
+    for(i=0;i<n;i++)
+    {
+        sum=sum+A[i];
+    }
+printf("%d",sum);
+getch();
+}
