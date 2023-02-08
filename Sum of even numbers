@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int N,i,A[100],sum=0;
+    printf("Enter the number of element in Array\n");
+    scanf("%d",&N);
+    printf("Enter %d number \n",N);
+    for(i=0;i<N;i++)
+    {
+        scanf("%d",&A[i]);
+    }
+    for(i=0;i<N;i++)
+    {
+        if(A[i]%2==0)
+        sum=sum+A[i];
+    }
+    printf("Sum is even number of given array:%d",sum);
+    getch();
+}
+
+
+
+
